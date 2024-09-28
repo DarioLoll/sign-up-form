@@ -8,7 +8,52 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello</h1>
-    Hello Worldf
+    <aside>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo of the FC Barcelona" class="logo">
+            <p class="logo-text">F.C.B</p>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@axpphotography" class="credit-link">AXP Photography</a> on <a href="https://unsplash.com" class="credit-link">Unsplash</a></p>
+    </aside>
+
+    <main>
+        <div class="top-text">
+            <h2>Ready to make your mark?</h2>
+            <p>Fill out the form below to get started and become a proud member of the Barça family.</p>
+        </div>
+        
+        <div class="form-wrapper">
+            <h3>Visca Barça!</h3>
+            <form action="#" method="post" id="sign-up-form">
+                <div class="input-wrapper">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Lionel..." required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Messi..." required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" placeholder="lionel.messi@barcelona.es" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+34 123123123">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
+                </div>
+            </form>
+        </div>
+
+        <button class="primary" type="submit" form="sign-up-form">Sign Up</button>
+        <p>Already a member? <a href="#" class="link">Sign in</a></p>
+    </main>
 </body>
 </html>
