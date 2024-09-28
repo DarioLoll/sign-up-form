@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('fonts/capture_it-webfont.woff2') format('woff2'),
+         url('fonts/capture_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'capture_itregular', sans-serif;
+    margin: 20px;
+    font-size: 10em;
+    letter-spacing: 0.1em;
+}
+
