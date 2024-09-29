@@ -109,6 +109,19 @@ main form input {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+
+main form input:invalid {
+    outline: none;
+    border: 2px solid #d62828;
+}
+
+input:required:placeholder-shown + span::after {
+    content: "This field is required";
+    color: #d62828;
+    font-size: 0.8rem;
+    display: block;
+}
+
 button.primary {
     background: #d62828;
     color: #fff;

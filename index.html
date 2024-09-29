@@ -24,30 +24,36 @@
         
         <div class="form-wrapper">
             <h3>Visca Barça!</h3>
-            <form action="#" method="post" id="sign-up-form">
+            <form method="post" id="sign-up-form">
                 <div class="input-wrapper">
                     <label for="first_name">First Name</label>
-                    <input type="text" name="first_name" id="first_name" placeholder="Lionel..." required>
+                    <input type="text" name="first_name" id="first_name" placeholder="Lionel..." required maxlength="30" minlength="3">
+                    <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Messi..." required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Messi..." required minlength="3" maxlength="30">
+                    <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="email">E-Mail</label>
-                    <input type="email" name="email" id="email" placeholder="lionel.messi@barcelona.es" required>
+                    <input type="email" name="email" id="email" placeholder="lionel.messi@barcelona.es" required minlength="5" maxlength="60">
+                    <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="+34 123123123">
+                    <input type="tel" name="phone" id="phone" placeholder="+34 123123123" minlength="5" maxlength="30">
+                    <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required minlength="8" maxlength="100">
+                    <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required minlength="8" maxlength="100">
+                    <span class="error"></span>
                 </div>
             </form>
         </div>
